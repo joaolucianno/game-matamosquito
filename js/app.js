@@ -42,6 +42,7 @@ var tempo = setInterval(function(){
 
 // ==========  Mosquito  ==========
 var vidas = 3;
+
 function criarMosquito(){
     //Gerenciar vidas
     if(vidas <= 0){
