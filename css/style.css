@@ -1,0 +1,48 @@
+html, body, .back{
+    height: 100%;
+}
+
+/*** Menu ***/
+.back{
+    background: url('../images/bg.jpg');
+    max-width: 1280px;
+    border: 1px solid red;
+    
+}
+
+.visor{
+    background: rgba(255, 255, 255, 0.548);
+    width: 250px;
+    padding: 10px 10px 5px 0px;
+    font-size: 1.4em;
+    font-weight: 500;
+    position: absolute;
+    bottom: 0;
+}
+
+.game{
+    cursor: url('../images/mata_mosca.png'), default;
+}
+
+.mosquito0{
+    width: 50px;
+    height: 50px;
+}
+
+.mosquito1{
+    width: 70px;
+    height: 70px;
+}
+
+.mosquito2{
+    width: 90px;
+    height: 90px;
+}
+
+.ladoA{
+    transform: scaleX(1);
+}
+
+.ladoB{
+    transform: scaleX(-1);
+}
