@@ -1,7 +1,7 @@
 // ==========  Level  ==========
 var level = window.location.search;
 level = level.replace('?', '');
-console.log(level);
+//console.log(level);
 if(level == 1){
     level = 1500;
 } else if(level == 2){
@@ -19,7 +19,7 @@ function ajustarTela(){
     if(widthForest > 1280){
         widthForest = 1280;
     }
-    console.log(`${widthForest} x ${heightForest}`);
+    //console.log(`${widthForest} x ${heightForest}`);
 };
 ajustarTela();
 
@@ -30,17 +30,15 @@ var tempoRestante = 14
 var tempo = setInterval(function(){
     document.querySelector('#tempoRestante').innerHTML = `Tempo restante: ${tempoRestante}`;
     tempoRestante--;
-    //inverterMosquito()
-    //mostrarMosquito();
     if(tempoRestante < 0){
         clearInterval(tempo);
         clearInterval(mostrarMosquito);
-        //window.location.href="winner.html";
+        window.location.href="winner.html";
     }
 }, 1000);
 
 // ==========  Mosquito  ==========
-var vidas = 4;
+var vidas = 3;
 function criarMosquito(){
     //Gerenciar vidas
     if(vidas <= 0){
@@ -48,9 +46,10 @@ function criarMosquito(){
     } else if(document.querySelector('#mosquito')){
         document.querySelector('#mosquito').remove();
         document.querySelector('#coracao'+vidas).setAttribute('src', 'images/coracao_vazio.png');
-        console.log(vidas);
+        vidas--;
+        //console.log(vidas);
     }
-    vidas--;
+    
     
     //Define posição do mosquito
     let x = Math.floor(Math.random() * (widthForest * 0.9));
@@ -58,7 +57,7 @@ function criarMosquito(){
         x = 1200;
     }
     let y = Math.floor(Math.random() * (heightForest * 0.8));
-    console.log(`${x} x ${y}`);
+    //console.log(`${x} x ${y}`);
 
     //Define tamanho do mosquito
     let tamanhoMosquito = Math.round(Math.random() * 2);
