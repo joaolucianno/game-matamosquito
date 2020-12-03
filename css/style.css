@@ -6,8 +6,6 @@ html, body, .back{
 .back{
     background: url('../images/bg.jpg');
     max-width: 1280px;
-    border: 1px solid red;
-    
 }
 
 .visor{
@@ -19,7 +17,7 @@ html, body, .back{
     position: absolute;
     bottom: 0;
 }
-
+/*** Game ***/
 .game{
     cursor: url('../images/mata_mosca.png'), default;
 }
