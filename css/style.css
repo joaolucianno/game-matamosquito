@@ -44,3 +44,13 @@ html, body, .back{
 .ladoB{
     transform: scaleX(-1);
 }
+
+@media (max-width: 500px){
+    .selectInicio{
+        width: 250px;
+        margin-top: 30px;
+    }
+    #btnInicio{
+        width: 250px;
+    }
+}

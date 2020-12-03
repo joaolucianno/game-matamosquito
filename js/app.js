@@ -19,6 +19,9 @@ function ajustarTela(){
     if(widthForest > 1280){
         widthForest = 1280;
     }
+    if(widthForest < 576){
+        widthForest = 300;
+    }
     //console.log(`${widthForest} x ${heightForest}`);
 };
 ajustarTela();
