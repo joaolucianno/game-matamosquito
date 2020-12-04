@@ -62,6 +62,8 @@ function criarMosquito(){
     }
     let y = Math.floor(Math.random() * (heightForest * 0.8));
     //console.log(`${x} x ${y}`);
+    x = x < 0 ? 0 : x;
+    y = y < 0 ? 0 : y;
 
     //Define tamanho do mosquito
     let tamanhoMosquito = Math.round(Math.random() * 2);
