@@ -2,6 +2,7 @@
 var level = window.location.search;
 level = level.replace('?', '');
 //console.log(level);
+//Tempo que é criado cada mosquito
 if(level == 1){
     level = 1500;
 } else if(level == 2){
