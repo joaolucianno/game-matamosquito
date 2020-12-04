@@ -22,13 +22,16 @@
                 <img id="coracao2" src="images/coracao_cheio.png" alt="Coração cheio">
                 <img id="coracao1" src="images/coracao_cheio.png" alt="Coração cheio">
             </div>
-            <div class="col" id="tempoRestante">
-                Tempo restante: 15
+            <div class="col">
+                Tempo restante: <span id="tempoRestante"></span>
             </div>
         </div>
     </div>
-
     <script src="js/app.js"></script>
+    <script>
+        document.querySelector('#tempoRestante').innerHTML = tempoRestante;
+    </script>
+    
       
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

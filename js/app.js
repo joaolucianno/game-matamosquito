@@ -29,10 +29,10 @@ ajustarTela();
 
 
 // ==========  Tempo  ==========
-var tempoRestante = 14
+var tempoRestante = 15
 var tempo = setInterval(function(){
-    document.querySelector('#tempoRestante').innerHTML = `Tempo restante: ${tempoRestante}`;
     tempoRestante--;
+    document.querySelector('#tempoRestante').innerHTML = tempoRestante;
     if(tempoRestante < 0){
         clearInterval(tempo);
         clearInterval(mostrarMosquito);
