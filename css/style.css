@@ -20,7 +20,7 @@ html, body, .back{
 }
 /*** Game ***/
 .game{
-    cursor: url('../images/mata_mosca.png'), default;
+    cursor: url('../images/mata_mosca.png') 30 30, auto;
 }
 
 .mosquito0{
